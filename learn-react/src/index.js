@@ -40,7 +40,10 @@ import ReactDOM from 'react-dom'
 /* 进阶部分 */
 // import App from './advanced/01_为什么是hook'
 // import App from './advanced/02_转发ref'
-import App from './advanced/03_hook使用原则'
+// import App from './advanced/03_hook使用原则'
+
+/* demo */
+import App from './demo/ScrollTab'
 
 ReactDOM.render(
   <React.StrictMode>
