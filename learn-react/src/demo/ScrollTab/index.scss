@@ -1,3 +1,56 @@
-.tab {
-  width: 1000px;
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+$height: 80px;
+
+@mixin Tab-Item {
+  width: 100px;
+  height: $height;
+  line-height: $height;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.container {
+  height: $height;
+  background: #fff;
+  line-height: $height;
+  display: flex;
+  justify-content: center;
+  .toRight,
+  .toLeft {
+    @include Tab-Item();
+    width: 50px;
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  .tab {
+    width: 1000px;
+    height: $height;
+    display: inline-block;
+    overflow: hidden;
+    .tab-item {
+      @include Tab-Item();
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 0.5 * $height;
+        margin-top: -0.5 * 0.5 * $height;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: #ccc;
+      }
+    }
+    .active {
+      background-color: #ccc;
+    }
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 /* 基础部分 */
-// import App from './base/01_组件通信'
+import App from './base/01_组件通信'
 // import App from './base/02_生命周期函数'
 // import App from './base/03_dangerouslySetInnerHTML'
 // import App from './base/04_ref'
@@ -43,7 +43,7 @@ import ReactDOM from 'react-dom'
 // import App from './advanced/03_hook使用原则'
 
 /* demo */
-import App from './demo/ScrollTab'
+// import App from './demo/ScrollTab'
 
 ReactDOM.render(
   <React.StrictMode>
