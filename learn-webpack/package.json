@@ -1,0 +1,38 @@
+{
+  "name": "learn-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack --config ./webpack.dev.js",
+    "build": "./node_modules/.bin/webpack --config ./webpack.prod.js",
+    "server": "node ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "csv-loader": "^3.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^5.0.0",
+    "webpack": "^5.24.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "css-loader": "^5.0.2",
+    "lodash": "^4.17.21",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-serve": "^3.2.0"
+  }
+}
