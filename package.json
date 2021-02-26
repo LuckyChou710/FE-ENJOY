@@ -1,4 +1,7 @@
 {
+  "author": "LuckuChou",
+  "description": "LEARN FE ENJOY",
+  "private":"true",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -20,5 +23,10 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuckyChou710/FE-ENJOY"
+  },
+  "license": "MIT"
 }
