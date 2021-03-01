@@ -1,7 +1,7 @@
 {
   "author": "LuckuChou",
   "description": "LEARN FE ENJOY",
-  "private":"true",
+  "private": "true",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
