@@ -3,10 +3,7 @@ const { addUser, deleteUser, queryUser } = require("./users_sql");
 
 module.exports = {
   add: (user, callback) => {
-    const sqlparam = [
-      user.username ? user.username : "",
-      user.password ? user.password : "",
-    ];
+    const sqlparam = [user.username, user.password];
     pool.query(addUser, sqlparam, (err, res) => {
       if (err) {
         throw err;
@@ -25,9 +22,7 @@ module.exports = {
     });
   },
   query: (params, callback) => {
-    const { username } = params;
-    const sqlparam = [username];
-    pool.query(queryUser, sqlparam, (err, res) => {
+    pool.query(queryUser, (err, res) => {
       if (err) {
         throw err;
       }
