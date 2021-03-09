@@ -5,10 +5,12 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "less": "^4.1.1",
     "postcss": "^8.2.7",
     "postcss-cli": "^8.3.1"
   },
   "scripts": {
-    "postcss": "./node_modules/.bin/postcss"
+    "postcss": "./node_modules/.bin/postcss",
+    "lessc": "./node_modules/.bin/lessc"
   }
 }
