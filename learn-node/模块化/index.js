@@ -14,11 +14,8 @@
 也可以使用module.exports = xxx
  */
 
-const say = require('./exports');
-const { say1 } = require('./module.exports');
-
-console.log(say);
-
-say1();
+// const stu = require('./exports');
+const stu = require('./module.exports');
+require('./module.exports');
 
 console.log(module.exports === exports);
