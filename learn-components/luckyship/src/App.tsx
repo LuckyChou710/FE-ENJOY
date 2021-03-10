@@ -9,7 +9,7 @@ const App = () => {
         alert('hello');
       }}
     >
-      hello
+      <span>hello</span>
     </Button>
   );
 };
