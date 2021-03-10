@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>异步编程</title>
+</head>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- <script>
+  const xhr = new XMLHttpRequest();
+  xhr.open('get', './data1.json');
+
+  xhr.onload = (e) => {
+    console.log(JSON.parse(e.target.response));
+    xhr.open('get', './data2.json');
+    xhr.onload = (e) => {
+      console.log(JSON.parse(e.target.response));
+      xhr.open('get', './data3.json');
+      xhr.onload = (e) => {
+        console.log(JSON.parse(e.target.response));
+      };
+      xhr.send();
+    };
+    xhr.send();
+  };
+  xhr.send();
+</script> -->
+
+
+
+<!-- <script>
+  axios
+    .get('./data1.json')
+    .then((res) => {
+      console.log(res.data);
+      axios.get('./data2.json').then(res => {
+        console.log(res.data)
+        axios.get('./data3.json').then(res => {
+          console.log(res.data)
+        })
+      })
+    })
+</script> -->
+
+
+<!-- <script type="text/babel">
+  function* fetchData() {
+    yield axios.get('./data1.json').then(res => console.log(res.data));
+    yield axios.get('./data2.json').then(res => console.log(res.data));
+    yield axios.get('./data3.json').then(res => console.log(res.data));
+  }
+
+
+  fetchData().next();
+  fetchData().next();
+  fetchData().next();
+
+</script> -->
+
+<!-- <script type="text/babel">
+  const fetchData = async () => {
+    await axios.get('./data1.json').then(res => console.log(res.data));
+    await axios.get('./data2.json').then(res => console.log(res.data));
+    await axios.get('./data3.json').then(res => console.log(res.data));
+  }
+  fetchData()
+</script> -->
+
+
+<!-- generator -->
+<!-- <script type="text/babel" src="./generator.js"></script> -->
+
+<!-- promise -->
+<script type="text/babel" src="./promise.js"></script>
+
+
+<body>
+</body>
+
+</html>
