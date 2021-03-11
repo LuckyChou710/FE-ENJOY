@@ -14,9 +14,8 @@
 interface Person {
   name: string;
   age: number;
-  // 可选属性
-  height?: string;
-  readonly gender: string;
+  height?: string; // 可选属性
+  readonly gender: string; // 只读属性
 }
 
 let chou: Person = {
@@ -39,8 +38,8 @@ let stu: Student = {
 
 // 类实现接口
 interface Counter {
-  // x: number
-  // y: number
+  x: number;
+  y: number;
   add(x: number, y: number): number;
 }
 
@@ -57,7 +56,11 @@ class myCounter implements Counter {
 }
 
 // 可索引的类型
+// 表示用number索引去访问属性时 会返回string类型
+// 例如 arr = ['chou'] arr[0] = 'chou'
+// ts支持两种索引类型 string和number 但是数字索引的返回值必须是字符串索引返回值类型的子类型
 interface StringArray {
   [index: number]: string;
 }
+
 
