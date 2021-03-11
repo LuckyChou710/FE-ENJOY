@@ -5,18 +5,6 @@
 
 // "use strict";
 
-function aaa() {
-  function bbb() {
-    function ccc() {
-      function ddd() {
-        console.log(this);
-      }
-      ddd();
-    }
-    ccc();
-  }
-  bbb();
-}
 
 var a = 10;
 function foo() {
