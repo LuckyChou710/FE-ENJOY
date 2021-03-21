@@ -1,5 +1,4 @@
 const express = require("express");
-const axios = require("axios");
 
 const app = express();
 
@@ -16,9 +15,9 @@ const middlewareB = (req, res, next) => {
 };
 
 const middlewareC = async (req, res, next) => {
-  const data = await axios.get("http://axios-js.com/zh-cn/docs/");
-  console.log(data);
-  req.message += data;
+  setTimeout(() => {
+    req.message += "C";
+  }, 0);
   next();
 };
 
