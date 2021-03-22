@@ -30,7 +30,7 @@ app.post("/single", upload.single("avatar"), (req, res, next) => {
 app.post(
   "/fields",
   upload.fields([
-    { name: "avatar", macCount: 1 },
+    { name: "avatar", maxCount: 1 },
     { name: "bg", maxCount: 2 },
   ]),
   (req, res, next) => {
