@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 /* 基础部分 */
-import App from './base/01_组件通信'
+// import App from './base/01_组件通信'
 // import App from './base/02_生命周期函数'
 // import App from './base/03_dangerouslySetInnerHTML'
 // import App from './base/04_ref'
@@ -18,6 +18,7 @@ import App from './base/01_组件通信'
 // import App from './redux/react-redux/Counter_react-redux'
 // import App from './redux/redux-thunk/GetName'
 // import App from './redux/redux-saga/GetName'
+import App from './redux/rematch/View'
 
 /* react css部分 */
 // import App from './css/css modules/App'
@@ -44,6 +45,9 @@ import App from './base/01_组件通信'
 
 /* demo */
 // import App from './demo/ScrollTab'
+
+/* bug */
+// import App from './bug/01_setState无限刷新页面'
 
 ReactDOM.render(
   <React.StrictMode>

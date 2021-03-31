@@ -1,1 +1,1 @@
-export const GET_NAME_VALUE = 'get_name_value'
+export const GET_NAME_VALUE = 'GET_NAME_VALUE'

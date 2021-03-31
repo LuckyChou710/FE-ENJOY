@@ -1,17 +1,15 @@
-/* eslint-disable import/no-anonymous-default-export */
-import { GET_NAME_VALUE } from './actionTypes'
+import { GET_NAME_VALUE } from './actionTypes';
 const defaultState = {
   name: null,
-}
+};
 
-export default (state = defaultState, action) => {
-
+export default function reducer(state = defaultState, action) {
+  const newState = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case GET_NAME_VALUE:
-      const newState = JSON.parse(JSON.stringify(state))
-      newState.name = action.name
-      return newState
+      newState.name = action.name;
+      return newState;
     default:
-      return state
+      return state;
   }
 }
